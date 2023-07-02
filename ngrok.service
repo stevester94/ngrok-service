@@ -1,0 +1,8 @@
+[Unit]
+Description=Ngrok to port 22
+
+[Service]
+ExecStart=/usr/sbin/ngrok tcp 22 --authtoken 2BJxJAy3xgv7urEBTMsdG_5N5YCop79hYqLPqEPZSw3 --log stdout
+
+[Install]
+WantedBy=multi-user.target
